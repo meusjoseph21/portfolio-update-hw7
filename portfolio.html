@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    
+
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Portfolio</title>
 </head>
@@ -21,6 +30,9 @@
                     <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-link" href="portfolio.html" >Portfolio</a>
                     <a class="nav-link" href="talktome.html" >Contact</a>
+
+                    <a class="btn waves-effect waves-light blue move" href="assets/resources/Resume.pdf" target="_blank">Resume</a>
+                    
                   </div>
                 </div> <!--These divs could be changed to nav? not sure if that is correct syntax-->
             </nav>
@@ -29,75 +41,84 @@
     <div class= "row spacer1"> <div class="col-xs-12"></div></div> <!--Spacer above images on site-->
 
     <main class="container">
-      <section class="card-deck row"> 
+        <div class = "row">
 
-        <figure class="card bg-dark text-light"> <!--First Image-->
-          <img src="./assets/images/image1-replace.jpg" class="card-img-top responsive-image" alt="Music">
-              <figcaption class="card-body">
-                <h5 class="card-title">Music</h5>
-                <p class="card-text">I love music so this may be a great thing to add to a future portfolio. Maybe add some sample music I have made.</p>
-                
-              </figcaption>
-        </figure>
+            <div class="card col-xs-12 col-md-5 grey darken-3">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator image-push" src="assets/images/card1.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator blue-grey-text text-lighten-2">Meal Matcher<i class="material-icons right">more_vert</i></span>
+                  <p><a href="https://jessicaano92.github.io/meal_matcher_javascript_ajax/" target = "_blank">Live Website</a></p>
+                </div>
+                <div class="card-reveal grey darken-3">
+                  <span class="card-title blue-grey-text text-lighten-2">Meal Matcher<i class="material-icons right">close</i></span>
+                  <p class = "blue-grey-text text-lighten-2">Meal Matcher is a recipe book that searches for recipes from the MealDB recipe API based off of the ingredients a user searches. Users can then save and remove recipes from their recipe book.</p>
+                  <p><a href="https://github.com/jessicaano92/meal_matcher_javascript_ajax" target = "_blank">GitHub Repository</a></p>
+                </div>
+              </div>
+
+              <div class ="col-2"></div>
+
+              <div class="card col-xs-12 col-md-5 grey darken-3">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator image-push" src="assets/images/weather2.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator blue-grey-text text-lighten-2">Weather Dashboard<i class="material-icons right">more_vert</i></span>
+                  <p><a href="https://meusjoseph21.github.io/weather-dashboard-06/" target = "_blank">Live Website</a></p>
+                </div>
+                <div class="card-reveal grey darken-3">
+                  <span class="card-title blue-grey-text text-lighten-2">Weather Dashboard<i class="material-icons right">close</i></span>
+                  <p class = "blue-grey-text text-lighten-2">The Weather Dashboard is a weather application that uses the open weather API to allow users to search any location that is valid within the API to obtain current weather conditions as well as a five day forecast for that location. Users can also save locations to their dashboard to reference later.</p>
+                  <p><a href="https://github.com/meusjoseph21/weather-dashboard-06" target = "_blank">GitHub Repository</a></p>
+                </div>
+              </div>
+
+              <div class = "row spacer1"></div>
+
+              <div class = "row">
+
+                <div class="card col-xs-12 col-md-5 grey darken-3">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator image-push" src="assets/images/random.jpg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator blue-grey-text text-lighten-2">Random Password Generator<i class="material-icons right">more_vert</i></span>
+                      <p><a href="https://meusjoseph21.github.io/random-password-gen-03/" target = "_blank">Live Website</a></p>
+                    </div>
+                    <div class="card-reveal grey darken-3">
+                      <span class="card-title blue-grey-text text-lighten-2">Random Password Generator<i class="material-icons right">close</i></span>
+                      <p class = "blue-grey-text text-lighten-2">The Random Password Generator uses a variety of options including uppercase, lowercase, numbers, and special characters to create a password between 8 and 128 characters. Users are prompted to decide what they would like to include and exclude in their password.</p>
+                      <p><a href="https://github.com/meusjoseph21/random-password-gen-03" target = "_blank">GitHub Repository</a></p>
+                    </div>
+                  </div>
+    
+                  <div class ="col-2"></div>
+    
+                  <div class="card col-xs-12 col-md-5 grey darken-3">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator image-push" src="assets/images/codequiz.jpg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator blue-grey-text text-lighten-2">Code Quiz<i class="material-icons right">more_vert</i></span>
+                      <p><a href="https://meusjoseph21.github.io/code-quiz-hw04/" target = "_blank">Live Website</a></p>
+                    </div>
+                    <div class="card-reveal grey darken-3">
+                      <span class="card-title blue-grey-text text-lighten-2">Code Quiz<i class="material-icons right">close</i></span>
+                      <p class = "blue-grey-text text-lighten-2">The Code Quiz is a chance for users to text their knowledge on javascript. This is meant to be a test for users that they may run into when they are applying for a job using javascript.</p>
+                      <p><a href="https://github.com/meusjoseph21/code-quiz-hw04" target = "_blank">GitHub Repository</a></p>
+                    </div>
+
+              </div>
+        
 
 
-        <figure class="card bg-dark text-light"> <!--second image-->
-          <img src="./assets/images/image2.jpg" class="card-img-top" alt="technology">
-              <figcaption class="card-body">
-                <h5 class="card-title">Technology</h5>
-                <p class="card-text">Technology and whats "in" is another one of my passions so I could have a blog that reviews new Technology.</p>
-                
-              </figcaption>
-        </figure>
+            
+        </div>
+        
 
 
-        <figure class="card bg-dark text-light"> <!--third image-->
-              <img src="./assets/images/image3.jpg" class="card-img-top" alt="Plants">
-              <figcaption class="card-body">
-                <h5 class="card-title">Plants</h5>
-                <p class="card-text">Plants are very cool and I would love to showcase all of my plant children for people to see!</p>
-                
-              </figcaption>
-        </figure>
-
-
-      </section> <!--End of first section-->
-
-      <div class= "row spacer1"></div> <!--Spacer mid page-->
-
-      <section class="card-deck row"> 
-
-        <figure class="card bg-dark text-light"> <!--fourth image--> 
-          <img src="./assets/images/image4.jpg" class="card-img-top" alt="Teamwork">
-              <figcaption class="card-body">
-                <h5 class="card-title">Teamwork</h5>
-                <p class="card-text">Teamwork is important! working together will get us through this bootcamp.</p>
-                
-              </figcaption>
-        </figure>
-
-
-        <figure class="card bg-dark text-light"> <!--fifth image-->
-          <img src="./assets/images/image5.jpg" class="card-img-top" alt="coding">
-              <figcaption class="card-body">
-                <h5 class="card-title">Coding</h5>
-                <p class="card-text">In future iterations of this portfolio, I will obvsiously be sampling some of my code projects, so it is only fitting to have a coding section.</p>
-                
-              </figcaption>
-        </figure>
-
-
-        <figure class="card bg-dark text-light"> <!--third image-->
-              <img src="./assets/images/image6.jpg" class="card-img-top" alt="social media">
-              <figcaption class="card-body">
-                <h5 class="card-title">Social Media</h5>
-                <p class="card-text">This could be a link to follow to all of my social medias and work that I have done for social media based things.</p>
-                
-              </figcaption>
-        </figure>
-
-
-      </section> <!--End of first section-->
 
     
 
@@ -112,12 +133,15 @@
       <a href="mailto:meusjoseph21@gmail.com" class="fa fa-google" target="_blank"></a>
 
       <a href="https://www.linkedin.com/in/joseph-meus-4b8b071b4/" target="_blank"class="fa fa-linkedin"></a>
+      
 
       <p>Get In Touch!</p>
 
     </footer>
 
   
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

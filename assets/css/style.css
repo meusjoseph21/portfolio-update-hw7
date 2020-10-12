@@ -13,10 +13,14 @@ body {
 
 /*  NAV BAR CSS */
 .navbar {
-    margin-left: -20px;
-    margin-right:-20px;
+   
     height: 100px;
   }
+
+.move { 
+    margin-left: 550px;
+    margin-top:20px;
+}
   
 
 /* SPACERS IN EACH PAGE */
@@ -59,6 +63,14 @@ img {
 .fa {
   font-size: 30px;
   opacity: 50%;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.image-push{
+    padding-top: 20px;
 }
 
 
